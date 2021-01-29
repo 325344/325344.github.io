@@ -8,8 +8,6 @@ echo 2ubuntu
 
 echo 3kali
 
-echo 4nodejs
-
 printf "Input integer number:"
 
 read num
@@ -25,6 +23,5 @@ pkg install wget openssl-tool proot -y && hash -r && wget https://raw.githubuser
 elif((num==3));then
 
 pkg install wget openssl-tool proot -y && hash -r && wget https://raw.githubusercontent.com/EXALAB/AnLinux-Resources/master/Scripts/Installer/Kali/kali.sh && bash kali.sh
-elif（（num==4））;then
-apt install nodejs
+
 fi
