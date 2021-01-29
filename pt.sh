@@ -1,10 +1,14 @@
 #!/bin/bash
 
+
+echo 请务必挂梯子，不然下载速度感人。本程序linux包来自anlinux
 echo 1换源
 
 echo 2ubuntu
 
 echo 3kali
+
+echo 4nodejs
 
 printf "Input integer number:"
 
@@ -16,10 +20,11 @@ apt update
 
 elif((num==2));then
 
-pkg install wget openssl-tool proot -y && hash -r && wget https://raw.g>
+pkg install wget openssl-tool proot -y && hash -r && wget https://raw.githubusercontent.com/EXALAB/AnLinux-Resources/master/Scripts/Installer/Ubuntu/ubuntu.sh && bash ubuntu.sh
 
 elif((num==3));then
 
-pkg install wget openssl-tool proot -y && hash -r && wget https://raw.g>
-
+pkg install wget openssl-tool proot -y && hash -r && wget https://raw.githubusercontent.com/EXALAB/AnLinux-Resources/master/Scripts/Installer/Kali/kali.sh && bash kali.sh
+elif（（num==4））;then
+apt install nodejs
 fi
